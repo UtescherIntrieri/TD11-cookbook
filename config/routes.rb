@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "home#index"
   resources :recipe_types, only: %i[new create index show]
   resources :recipes, only: %i[new create edit update show]
+  resources :categories, only: %i[new create edit update show]
 
 
 
